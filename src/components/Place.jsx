@@ -17,7 +17,7 @@ class Place extends React.Component{
                     <ListItem onClick={this.onTogglePix.bind(this)} >
                         {this.props.place.title}
                     </ListItem>
-                    <ItemDetail reactKey={this.props.reactKey} place={this.props.place} param={this.state.shown} />
+                    <ItemDetail reactKey={this.props.reactKey} place={this.props.place} param={this.state.shown} namee={this.props.namee}/>
                 </div>)
     }
 }

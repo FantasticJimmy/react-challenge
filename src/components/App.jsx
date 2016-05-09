@@ -110,7 +110,7 @@ class App extends React.Component{
                         <MapView />
                     </div>
                 </div>
-                <Favorite />
+                <Favorite namee="fav"/>
             </div>
             )
     }

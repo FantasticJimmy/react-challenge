@@ -20,10 +20,12 @@ class Favorite extends React.Component{
         });
     }
     render(){
+        var that = this;
+        // debugger
         var placeNodes = [];
         for(var i in this.state.places){
             if(this.state.places[i].likedBy === "Jimmy")
-                placeNodes.push(<Place key={i} reactKey={i} place={this.state.places[i]} />)
+                placeNodes.push(<Place key={i} reactKey={i} place={this.state.places[i]} namee={this.props.namee} />)
         }
         
         // var placeNodes = this.state.places.map((place)=>{
