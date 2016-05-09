@@ -6,6 +6,7 @@ import Firebase from 'firebase'
 import Login from './Login.jsx'
 import _ from 'lodash'
 import Favorite from './Favorite.jsx'
+import BixiViewMap from './BixiViewMap.jsx'
 
 
 var ThemeManager = new mui.Styles.ThemeManager();
@@ -19,7 +20,7 @@ var MoreVertIcon = mui.MoreVertIcon
 var MenuItem = mui.MenuItem
 
 var styles={
-    showMapView: {display: 'block',width: '700px', height: '700px'}
+    showMapView: {display: 'block',width: '700px', height: '700px',margin: 50}
 }
 
 class App extends React.Component{
@@ -111,6 +112,9 @@ class App extends React.Component{
                     </div>
                 </div>
                 <Favorite namee="fav"/>
+                <div style={{width: '700px', height: '700px',margin: 50, marginLeft: 'auto',marginRight: 'auto'}}>
+                    <BixiViewMap />
+                </div>
             </div>
             )
     }

@@ -20,8 +20,7 @@ class Favorite extends React.Component{
         });
     }
     render(){
-        var that = this;
-        // debugger
+
         var placeNodes = [];
         for(var i in this.state.places){
             if(this.state.places[i].likedBy === "Jimmy")
